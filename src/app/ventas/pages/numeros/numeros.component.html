@@ -13,4 +13,16 @@
         {{(ventasNetas) + 1000000 | number: '1.2-2'}}
         </p-card>
     </div>
+    <div class="p-col-4">
+        <p-card header="Ventas brutas"
+                subheader="del presente año">
+        {{(ventasNetas) + 2000000 | currency:'ARS':'symbol-narrow':'1.4-4' }}
+        </p-card>
+    </div>
+    <div class="p-col-4">
+        <p-card header="Margen de ganancias % "
+                subheader="del presente año">
+        {{  porcentaje | percent:'1.2-2'}}
+        </p-card>
+    </div>
 </div>
